@@ -8,13 +8,13 @@ A Powershell script parsing Windows Event Log information for failed RDP attacks
 
 <h2>Languages Used</h2>
 
-- <b>PowerShell</b> Extracting RDP failed logon logs from Windows Event Viewer
+- <b>PowerShell:</b> Extracting RDP failed logon logs from Windows Event Viewer
 
 <h2>Environments Used </h2>
 
-- <b>Microsoft Azure</b> Virtual Machine, Log Analytics Workspace, Mircorsoft Sentinel
+- <b>Microsoft Azure:</b> Virtual Machine, Log Analytics Workspace, Mircorsoft Sentinel
 
-- <b>Windows 10 pro</b> (21H2)
+- <b>Windows 10 pro:</b> (21H2)
 
 <h2>Utilities Used</h2>
 
