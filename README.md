@@ -2,52 +2,52 @@
 
 
 <h2>Description</h2>
-With the use of a Powershellscript parsing Windows Event Log information for failed RDP attacks and a third part API collecting geographic information about the attackers locaion.
+A Powershell script is parsing Windows Event Log information for failed RDP attacks on a Windows 10 pro virtual machine and a third party API is collecting geographic information about the attackers location. Microsoft Azure Sentinel displays the information on a world map.
 <br />
 
 
-<h2>Languages and Utilities Used</h2>
+<h2>Languages Used</h2>
 
 - <b>PowerShell</b> Extracting RDP failed logon logs from Windows Event Viewer
 
 <h2>Environments Used </h2>
 
-- <b>Microsoft Azure</b> Virtual Lab, Log Analytics Workspace, Mircorsoft Sentinel
+- <b>Microsoft Azure</b> Virtual Machine, Log Analytics Workspace, Mircorsoft Sentinel
 
 - <b>Windows 10 pro</b> (21H2)
 
 <h2>Utilities Used</h2>
 
--ipgeolocation.io:</b> IP Address to Geolocation API
+- <b>ipgeolocation.io:</b> IP Address to Geolocation API
 
 <h2>Program walk-through:</h2>
 
 <p align="center">
-Launch the utility: <br/>
-<img src="https://i.imgur.com/62TgaWL.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+Create Virtual Machine: Open Firewall to public internep traffic <br/>
+<img src="https://imgur.com/DkaG4pN" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-Select the disk:  <br/>
+Create Log Analytics Workspace: Connect Log Analytics to VM  <br/>
 <img src="https://i.imgur.com/tcTyMUE.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-Enter the number of passes: <br/>
+Set up Microsoft Azure Sentinel: Log into VM remotely <br/>
 <img src="https://i.imgur.com/nCIbXbg.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-Confirm your selection:  <br/>
+Observe Event Viewer Logs in VM: Turn off Windows Firewall on VM  <br/>
 <img src="https://i.imgur.com/cdFHBiU.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-Wait for process to complete (may take some time):  <br/>
+Get Geolocation.io API Key: Run Powershell script to get Geo Data from attackers  <br/>
 <img src="https://i.imgur.com/JL945Ga.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-Sanitization complete:  <br/>
+Create custom log in LAW: Extract filds from raw custom log data  <br/>
 <img src="https://i.imgur.com/K71yaM2.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-Observe the wiped disk:  <br/>
+Setup map in Sentinel by Country: Observe attackers on world map <br/>
 <img src="https://i.imgur.com/AeZkvFQ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 
